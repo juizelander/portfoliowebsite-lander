@@ -420,7 +420,7 @@ body {
 }
 
 .card-header {
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     border-bottom: 1px solid #333;
     display: flex;
     justify-content: space-between;
@@ -446,7 +446,7 @@ body {
 }
 
 .card-body {
-    padding: 1.5rem;
+    padding: 1rem;
     flex-grow: 1;
 }
 
@@ -459,7 +459,8 @@ body {
 .project-desc {
     color: var(--text-muted);
     font-size: 0.95rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
 }
 
 .tags {
@@ -476,7 +477,7 @@ body {
 }
 
 .card-footer {
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-top: 1px solid #333;
 }
 
