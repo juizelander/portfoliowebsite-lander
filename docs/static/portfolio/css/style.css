@@ -393,6 +393,32 @@ body {
     transform: translateY(-5px);
 }
 
+.project-paideia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/paideia.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.project-paideia .project-title,
+.project-paideia .project-desc,
+.project-paideia .project-id {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.project-scholarsync {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/scholarsync.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.project-scholarsync .project-title,
+.project-scholarsync .project-desc,
+.project-scholarsync .project-id {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 .card-header {
     padding: 1rem;
     border-bottom: 1px solid #333;
