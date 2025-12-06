@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lander Barrera | BSIT Portfolio</title>
+    <meta name="description" content="Portfolio of Lander Barrera, graduating BSIT student.">
+    <!-- Google Fonts: Montserrat for Lemon/Milk alternative, Roboto Mono for tech details -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2240%22 font-weight=%22900%22 font-family=%22sans-serif%22>JLB</text></svg>">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="logo"><span class="dark-accent">J</span>LB<span class="dot">.</span></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar">☰</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Start</a></li>
+            <!-- <li><a href="#about">Specs</a></li> -->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 class="hero-title glitch" data-text="LANDER BARRERA">LANDER BARRERA</h1>
+                </div>
+                <div class="hero-subtitle">
+                    <span class="bracket">[</span> <span class="typing-text">BSIT GRADUATE // FULL STACK DEV</span>
+                    <span class="bracket">]</span>
+                </div>
+                <div class="deco-line"></div>
+                <p class="hero-desc">Building sleek, high-performance digital experiences.</p>
+                <a href="#projects" class="btn primary-btn">INITIATE SEQUENCE</a>
+            </div>
+            <div class="hero-visual">
+                <!-- 2D Schematic Visuals created with CSS -->
+                <div class="schematic-circle"></div>
+                <div class="schematic-crosshair"></div>
+                <div class="schematic-lines"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <!--
+        <section id="about" class="section about-section">
+            <div class="container margin-bottom">
+                <div class="section-header">
+                    <h2 class="section-title">01 // SYSTEM SPECS</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3><span class="icon">⚡</span> CORE</h3>
+                        <p>Driven by a passion for clean code and minimalist design. I turn complex problems into
+                            elegant solutions.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3><span class="icon">🛠</span> TECH STACK</h3>
+                        <ul class="tech-list">
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React / Vue</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <h3><span class="icon">🎯</span> OBJECTIVE</h3>
+                        <p>Seeking opportunities to deploy skills in a challenging environment. Ready to join the
+                            server.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">02 // PROJECTS</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <div class="card-header">
+                            <span class="project-id">PRJ-01</span>
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">PROJECT ALPHA</h3>
+                            <p class="project-desc">A responsive web application designed for high-volume data
+                                visualization.</p>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>D3.js</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn sm-btn">VIEW SOURCE</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <div class="card-header">
+                            <span class="project-id">PRJ-02</span>
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">NEON COMMERCE</h3>
+                            <p class="project-desc">E-commerce platform with a focus on dark mode aesthetics and speed.
+                            </p>
+                            <div class="tags">
+                                <span>Vue</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn sm-btn">view source</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <div class="card-header">
+                            <span class="project-id">PRJ-03</span>
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">TASK MATRIX</h3>
+                            <p class="project-desc">Productivity dashboard for tracking daily objectives and long-term
+                                goals.</p>
+                            <div class="tags">
+                                <span>Vanilla JS</span>
+                                <span>API</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn sm-btn">view source</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">03 // CONTACTS</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p class="contact-text">Ready to collaborate? Send a signal.</p>
+                        <a href="mailto:juizelander@gmail.com" class="email-link">JUIZELANDER@GMAIL.COM</a>
+                        <div class="social-links">
+                            <a href="https://github.com/juizelander" class="social-btn">GitHub</a>
+                            <a href="https://www.linkedin.com/in/joz-lander-barrera-9392b83a0"
+                                class="social-btn">LinkedIn</a>
+                            <a href="https://www.facebook.com/juizelander/" class="social-btn">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Lander Barrera. <span class="accent-text">System Online.</span></p>
+        </div>
+    </footer>
+
+    <script src="{% static 'portfolio/js/script.js' %}"></script>
+</body>
+
+</html>
